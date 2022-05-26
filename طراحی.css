@@ -1,0 +1,39 @@
+body {
+  background: #212121;
+}
+button {
+  display: block;
+  padding:  20px 70px;
+  background:  #f1f1f1;
+  border: 5px solid #000;
+  margin: 25vh auto;
+  outline: none;
+  transition: .350s;
+  font-size: 20px;
+}
+button:hover {
+  transform: scale(1.1);
+  color: #eee;
+  background: #000;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px #3b50d1,
+              0 0 10px #4535c7;
+  animation: anim1 .7s infinite;
+}
+@keyframes anim1{
+  0%,
+  20%{
+    box-shadow: 0 0 10px #3b50d1,
+              0 0 10px #4535c7;
+  }
+  50%{
+    box-shadow: 0 0 40px #3b50d1,
+              0 0 40px #4535c7;
+  }
+  100%{
+    box-shadow: 0 0 10px #3b50d1,
+              0 0 10px #4535c7;
+  }
+}
